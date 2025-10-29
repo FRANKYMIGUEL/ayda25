@@ -2,12 +2,11 @@
 # vi: set shiftwidth=4 tabstop=8 expandtab:
 """
 Algoritmo de Ordenamiento por Selección (Selection Sort)
-Trabajo en clase
 """
 import random
 import time
 
-cantidad_de_elmentos = 100
+cantidad_de_elementos = 100
 inicio = 0
 fin = 100
 
@@ -33,7 +32,7 @@ def main():
     """
     Función principal
     """
-    lista = [random.randint(inicio,fin) for _ in range(cantidad_de_elmentos) ]
+    lista = [random.randint(inicio,fin) for _ in range(cantidad_de_elementos) ]
     ordenada = lista.copy()
 
     tiempo_inicio = time.time()
