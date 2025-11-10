@@ -12,7 +12,7 @@ from merge_sort import ordenar as ms
 from seleccionshort import ordenar as ss
 
 # 100, 1_000, 10_000, 100_000, 1_000_000
-cantidad_de_elementos = 1_000_000
+cantidad_de_elementos = 100
 inicio = 0
 fin = cantidad_de_elementos
 
@@ -47,13 +47,7 @@ def main():
     duracion_qs = obtener_tiempo("Quicksort", qs, lista)
     print("-----")
     duracion_ms = obtener_tiempo("Merge sort", ms, lista)
-    print("-----")
-    duracion_ss = obtener_tiempo("Selection sort", ss, lista)
-    print("-----")
-    print(f"Quicksort duró {duracion_qs:_} microsegundos")
-    print(f"Merge sort duró {duracion_ms:_} microsegundos")
-    print(f"Selection sort duró {duracion_ss:_} microsegundos")
-   
+
     es_nuevo = True
     if os.path.exists(nombre_de_archivo_de_tiempos):
             es_nuevo = False
